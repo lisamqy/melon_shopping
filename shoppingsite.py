@@ -77,13 +77,9 @@ def show_shopping_cart():
             
         melon = melons.get_by_id(melon_id)
         
-        # price = melon.price
         cost = melon.price * qty
         total_cost += cost
         melons_cart.append(melon)
-        print('\n\n\n\n\n\n\n')
-        print(f'total -----{total_cost}')
-        print('\n\n\n\n\n\n\n')
         melon.qty = qty
         melon.cost = cost
 
